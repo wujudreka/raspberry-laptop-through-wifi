@@ -1,5 +1,18 @@
 # raspberry-laptop-through-wifi
+this is a simple way for you to connect your laptop as a screen to control your raspberry through local wifi.
 
+##  **prerequisite:**
+###  **Hardware:**
+Raspberry pi
+
+###  **Software:**
+1.  raspberry pi OS image https://www.raspberrypi.com/software/
+2.  raspberry pi imager https://projects.raspberrypi.org/en/projects/imager-install
+
+###  **Steps:**
+1.  write your image to
+
+### Useful things to know
 |Component label	|  LED color	Meaning
 |-----------------|--------------------
 |OK/ACT           |  Green	SD-Card Activity
