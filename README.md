@@ -8,12 +8,18 @@ Raspberry pi
 ###  **Software:**
 1.  raspberry pi OS image https://www.raspberrypi.com/software/
 2.  raspberry pi imager https://projects.raspberrypi.org/en/projects/imager-install
+3.  VNC Viewer https://www.realvnc.com/en/connect/download/viewer/
 
-###  **Steps:**
+###  **Basic Steps:**
 1.  write your image to your SD card dont forget before that, you have to format your SD card into FAT32
-2.  put two file wpa_supplicant and ssh into boot directory, dont forget to change country ID aads
+2.  put two file wpa_supplicant and ssh into boot directory, dont forget to change country ID, ID wifi, and the password
+3.  load the sd card into your raspberry
+4.  activate your SSH (see activating SSH section below)
+5.  open VNC viewer, enter your raspberry IP, connect and input default id:"pi" pass:"raspberry"
+6.  if your VNC doesnt work and only showing "cannot currently show the desktop", try to change the boot mode into desktop
+7.  if changing the boot mode doestn work try to install ligthdm by using command "sudo apt-get install lightdm"
 
-### Useful things to know
+### Activating SSH
 You can activate ssh through command line through putty.
 1. open putty
 2. input hostName/raspberry IP address, you can know this from you smartphone if you do thetering, or you can find it using software advance IP scanner
@@ -24,8 +30,8 @@ You can activate ssh through command line through putty.
 7. then enable ssh
 8. also select VNC and install
 9. if the VNC install doesnt work try to update the raspberry OS using command "sudo apt update"
-10. 
 
+### Useful things to know
 |Component label	|  LED color	Meaning
 |-----------------|--------------------
 |OK/ACT           |  Green	SD-Card Activity
